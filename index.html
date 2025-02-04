@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Webpage</title>
+    <link rel="icon" href="https://github.com/Nonwuorah/expense-tracker-app/blob/main/logo-png.png?raw=true" type="image/x-icon">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="home">
+            <h1>Welcome to Nedu's Portfolio</h1>
+            <p>Full Stack Developer</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Me</h2>
+            <article>
+                <p>
+            Prof. Nedu is a Historian, an Educator, a Full Stack Developer (in view), an Art Enthusiast, a believer of humanity and God.
+            He was born in Lagos Nigeria in the late 80s, He lived most of his earlychildhood and teens in Lagos, where he got a formal primary education in a private school, 
+            and further went on to get a Secondary education in a Military school in Lagos still.
+            After his secondary education, he moved on to the eastern region of Nigeria, precisely Anambra State of Nigeria to get a formal tertiary education.
+            He graduated with honours in the year 2019, He worked as a Liberian and a Curator during his formal education in the eastern region, and also taught History and 
+            Mathematics during his time in the eastern region till the hit of Covid-19 and the lapses and flaw in the educational sector, gave him the boost to relocate back to Lagos, to begin a career in an Art Gallery.
+            He is currently based in Lagos, freelancing in the creativity space and also still carrying out academic research and delivering academic documentations periodically. 
+            And also studying  to become a renowned Software engineering to be able to make innovative impacts in the educational sector and globally.
+            </p>
+            
+            <p>
+                He works with Blue Sky Arts & Studio Festac, Lagos as an Administrative Officer, his role as an administrative officer has led him, to delivering 
+                clerical support by handling a range of routine and special requirements for the establishment.
+                And His role as an administrative officer has been commendable over the years.
+            </p>
+          
+                <div class="profile-content">
+                    <video controls width="150" height="240" autoplay class="profile-video">
+                        <source src="/files/nedu.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <audio controls>
+                        <source src="/files/2Baba-Bebe-ft-Larry-Gaaga-Mi-Casa.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <p>I'm a passionate developer with expertise in web technologies.</p>
+            </article>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work">
+            <h2>My Work</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project</th>
+                        <th>Description</th>
+                        <th>Technologies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Blue Sky Arts & Studios</td>
+                        <td>Artist, Administrative & Sales</td>
+                        <td>Canvas, Oil Paint, </td>
+                    </tr>
+                    <tr>
+                        <td>E-commerce Platform</td>
+                        <td>Full-stack online shopping platform</td>
+                        <td>React, Node.js, MongoDB</td>
+                    </tr>
+                    <tr>
+                        <td>Portfolio Website</td>
+                        <td>Personal portfolio showcase</td>
+                        <td>HTML5, CSS3, JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Task Manager</td>
+                        <td>Project management application</td>
+                        <td>Vue.js, Express, PostgreSQL</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume">
+            <h2>Resume</h2>
+            <article>
+                <h3>Experience</h3>
+                <ul>
+                    <li>
+                        <h4>Junior Developer</h4>
+                        <p>eFTD • 2023 - Present</p>
+                        <ul>
+                            <li>Collaborated in development of multiple web applications using HTML, CSS, JavaScript, React and Node.js.</li>
+                            <li>Worked in a team of 5 developers and optimized web pages for speed, accessibility, and SEO best practices.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h4>Full Stack Developer</h4>
+                        <p>Alt___School • 2023 - 2024</p>
+                        <ul>
+                            <li>Developed and maintained multiple web applications using modern technologies.</li>
+                            <li>Collaborated with design team to implement responsive UI/UX designs.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form action="/submit" method="POST">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder= "Input your name here" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder= "Input your email here" required>
+                    </div>
+
+                    <div>
+                        <label for="subject">Subject:</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="job">Job Opportunity</option>
+                            <option value="project">Project Proposal</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder= "Input your message here" required></textarea>
+                    </div>
+
+                    <div>
+                        <label for="newsletter">Subscribe to newsletter:</label>
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                    </div>
+
+                    <div>
+                        <label>Preferred contact method:</label>
+                        <input type="radio" id="contact-email" name="contact-method" value="email">
+                        <label for="contact-email">Email</label>
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                        <label for="contact-phone">Phone</label>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                    <button type="reset">Clear Form</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h3>Connect With Me</h3>
+            <ul>
+                <li><a href="https://github.com/Nonwuorah" target="_blank">GitHub</a></li>
+                <a href="https://www.linkedin.com/in/onwuorah-chinedu?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a></li>
+                <a href="mailto:allaboutnedu@gmail.com" target="_blank">Email</a></li>
+            </ul>
+        </div>
+        <p>&copy; 2024 Nedu's Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+</html>
